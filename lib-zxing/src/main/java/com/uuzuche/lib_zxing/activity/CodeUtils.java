@@ -172,8 +172,7 @@ public class CodeUtils {
         Matrix matrix = new Matrix();
         float scaleFactor = Math.min(w * 1.0f / 5 / logo.getWidth(), h * 1.0f / 5 /logo.getHeight());
         matrix.postScale(scaleFactor,scaleFactor);
-        Bitmap result = Bitmap.createBitmap(logo, 0, 0, logo.getWidth(),   logo.getHeight(), matrix, true);
-        return result;
+        return Bitmap.createBitmap(logo, 0, 0, logo.getWidth(),   logo.getHeight(), matrix, true);
     }
 
     /**
